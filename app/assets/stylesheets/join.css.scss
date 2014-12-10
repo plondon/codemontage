@@ -2,6 +2,11 @@
 @import "colors";
 
 #mc_embed_signup {
+	form {
+		@media (min-width: 800px) {
+			max-width: 500px;
+		}
+	}
 	input[type="checkbox"],
 	input[type="radio"] { display: none !important; }
 	input[type="checkbox"] + label:before,
@@ -25,5 +30,8 @@
 	input[type="radio"]:checked + label:before { 
 	  text-align: center;
 	  background: $cmPurple;
+	}
+	.mc-field-group label {
+		text-transform: capitalize;
 	}
 }
